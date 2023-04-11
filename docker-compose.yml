@@ -30,7 +30,7 @@ services:
        MYSQL_PASSWORD: ${DB_PASS}
        TZ: ${TZ}
      ports:
-       - 4306:3306
+       - ${DB_PORT}:3306
 
 volumes:
   db_data: 
